@@ -1,0 +1,165 @@
+*{
+	font-family: 'Oswald', sans-serif;
+	box-sizing: border-box;
+	color: #dddddd;
+}
+body {
+	background-color: #dddddd;
+}
+h1 {
+	margin: 0;
+	white-space: nowrap;
+}
+
+ul {
+	list-style: none;
+	list-style-type: none;
+}
+li {
+}
+span {
+	word-wrap: break-word;
+	white-space: initial;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	color:black;
+}
+hr {
+	border-top: 1px solid white;
+	border-style: inset;
+	border-width: 1px;
+	margin: 0;
+}
+.container {
+	background-color: #151819;
+}
+.navbar {
+	background-color: #151819;
+	border-color: #666a72;
+	border-width: 3px;
+}
+.navbar-default .navbar-brand{
+	color: #dddddd;
+}
+.navbar-default .navbar-collapse{
+	border-color: black;
+}
+.navbar-default .navbar-brand:focus{
+	color:#dddddd;
+}
+@media (min-width: 768px)
+{
+	.navbar-collapse.collapse{
+		display:none!important;
+}
+}
+@media (max-width: 767px)
+{
+	#searchGrid #searchBtn{
+	padding-left: 0px;
+	}
+	#searchGrid #searchBar{
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	h1 {
+		font-size: 3.5vw;
+		white-space: initial;
+	}
+	.drop-down-list{
+		width: 100%;
+	}
+}
+@media (max-width: 600px){
+	h1 {
+		font-size: 20px;
+	}
+}
+
+#searchGrid #searchBar{
+	padding-right: 5px;
+}
+#searchGrid #searchBtn{
+	padding-left: 5px;
+}
+#searchGrid{
+	padding: 15px;
+}
+#navButtons button span{
+	color: black;
+}
+#navButtons{
+	padding-top: 15px;
+}
+#navButtons button{
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.navbar-toggle{
+	margin-top: 0;
+	margin-right: 0;
+}
+#colBtn{
+
+}
+li#aboutBtnLi{
+	margin-right: 5px;
+	float: left;
+}
+#mapBtn, #aboutBtn{
+	margin-left: 5px;
+}
+#motobikeImg
+{
+	float: left;
+}
+#imgDescription
+{
+	display: inline;
+}
+#imgDescription2
+{
+	display: inline;
+}
+#motorbikeimg2{
+	float: left;
+}
+div > img {
+	margin-right: 5px;
+}
+
+div.item img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: auto;
+	margin-bottom: 20px;
+}
+div#myCarousel
+{
+	padding-bottom: 5px;
+}
+ol.carousel-indicators{
+	bottom: 5px;
+	margin-bottom: 0px;
+}
+div.carousel-caption{
+	color: black;
+	bottom: 0px;
+	padding-bottom: 5px;
+
+} 
+.bike-desc{
+	display: none;
+}
+.active{
+	display:block;
+}
+p.bike-desc {
+	margin-right: auto;
+}

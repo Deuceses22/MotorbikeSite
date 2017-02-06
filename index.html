@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <!--StyleSheet references-->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    </head>
+  <body>
+  <header> 
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+            <div id="headercon" class="row">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+         <div class="navbar-header">
+            <div class="navbar-brand"> 
+              <a href="index.html"> 
+                <h1> Motorbike News</h1>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div id="searchGrid" class="col-md-5 col-sm-5 col-lg-5 col-xs-6">
+            <div id="searchBar" class="col-md-8 col-sm-7 col-lg-8 col-xs-12">
+              <input id="searchBar2" type="text" class="form-control" placeholder="Search for...">
+              </div>
+              <div id="searchBtn" class="col-md-4 col-sm-5 col-lg-4 hidden-xs">
+              <button class="btn btn-default" type="button">Search!</button>
+              </div>
+          </div><!-- /input-group -->
+          <div id="navButtons" class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+            <button id="colBtn" type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <ul class="bs-glyphicons-list hidden-xs">
+              <li id="aboutBtnLi">
+                <button id="aboutBtn" type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                  </button>
+                  </br>
+                  <span class="hidden-sm">About us</span>
+              </li>
+              <li>
+                <button id="mapBtn" type="button" class="btn btn-default">
+                
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  </button>
+                  </br>
+                  <span class="hidden-sm">Find a dealer</span>
+              </li>
+              </ul>
+          </div>
+          <div class="col-xs-12">
+        <div id="collapsable-nav" class="collapse navbar-collapse hidden-sm hidden-md hidden-lg">
+            <ul id="nav-list" class="">
+              <li class="drop-down-list">
+              <a href="#aboutus">
+                <h2 id="menu-item" class="text-center">Info</h2>
+                </a>
+              </li>
+                <hr>
+              <li class="drop-down-list">
+                <a href="#locatedealer">
+                  <h2 id="menu-item" class="text-center">Locate Dealer</h2>
+                </a>
+              </li>
+            </ul><!-- #nav-list -->
+         </div>
+         </div>
+</div>
+          </div>
+        </div>
+      </nav>
+      </header>
+      <div class="container">
+        <h2 id="h2MainCon" class="text-center">Motorbike slide</h2>
+        <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/cbr600img.jpg" alt="Chania">
+        <div class="carousel-caption">
+          <h3>Honda CBR600</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/r6img.png" alt="Chania">
+        <div class="carousel-caption">
+          <h3>Yamaha R6</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/mt-07img.jpg" alt="Flower">
+        <div class="carousel-caption">
+          <h3>Yamaha MT-07</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <p class="bike-desc active"> this cbr is good </p>
+      </div>
+  <!--Script references-->
+  <script src="script/jquery-3.1.1.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/script.js"></script>
+  </body>
+
+</html>
