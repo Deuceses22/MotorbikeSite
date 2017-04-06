@@ -2,7 +2,16 @@ var imgDivs;
 var images;
 var listItems;
 var bikeDescList;
+if (localStorage.getItem("firstName") != "undefined" && localStorage.getItem("firstName") != "")
+{
+	$('span.registerClass')[0].textContent = localStorage.getItem("firstName");
+}
+else {
+	$('span.registerClass')[0].textContent = "Login"
+}
 $(document).ready(function(){
+	
+		
         imgDivs = $("div.item"); 
         images = $("div.item").children();
         listItems = $("ol.carousel-indicators").children();
@@ -25,7 +34,17 @@ $(document).ready(function(){
 //       interval: 1000
 //     });
 // });
-
+var cookie = function(firstName){
+	alert(firstName);
+	if (typeof(Storage) !== "undefined") {
+	    // Store
+	    localStorage.setItem("firstName", firstName);
+	    // Retrieve
+	    $('span.registerClass')[0].textContent = localStorage.getItem("firstName");
+	} else {
+	    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+}
 var searchBar = function(){
         if ($('#searchBar2').val()== 'mt-07' &&  !$('div.item')[2].classList.contains('active'))
         {
@@ -72,4 +91,46 @@ var searchBar = function(){
             imgDivs[0].className += ' active';
             listItems[0].className += ' active';
         }
-    }
+    };
+function signUp(){
+	var first = "";
+	var last = "";
+	var age = "";
+	var email = "";
+	var passWord = "";
+	first = first + $('#first').val();
+	last = last + $('#last').val();
+	age = age + $('#age').val();
+	email = email + $('#email').val();
+	passWord = passWord + $('#passWord').val();
+	var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+            var data = xhr.responseText;
+            cookie(data);
+        }
+    };
+    xhr.open('GET', 'signUp?inputParams='+ "&first=" + first + "&last=" + last + "&age=" + age + "&email=" + email + "&passWord=" + passWord , true);
+    xhr.send(null);
+}
+function signIn(){
+	var first = "";
+	var last = "";
+	var age = "";
+	var email = "";
+	var passWord = "";
+	first = first + $('#first').val();
+	last = last + $('#last').val();
+	age = age + $('#age').val();
+	email = email + $('#email').val();
+	passWord = passWord + $('#passWord').val();
+	var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+            var data = xhr.responseText;
+            cookie(data);
+        }
+    };
+    xhr.open('GET', 'signIn?inputParams='+ "&email=" + email + "&passWord=" + passWord , true);
+    xhr.send(null);
+}

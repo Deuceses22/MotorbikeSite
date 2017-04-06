@@ -16,6 +16,7 @@ ul {
 	list-style-type: none;
 }
 li {
+	
 }
 span {
 	word-wrap: break-word;
@@ -26,6 +27,9 @@ a {
 }
 a:hover {
 	color:black;
+}
+#mapBtnLi{
+	margin-right: 5px;
 }
 hr {
 	border-top: 1px solid white;
@@ -41,6 +45,14 @@ hr {
 	border-color: #666a72;
 	border-width: 3px;
 }
+ul.navBtnLi li{
+	display: inline;
+	float:left;
+	width:40px;
+}
+li > span{
+	display: block;
+}
 .navbar-default .navbar-brand{
 	color: #dddddd;
 }
@@ -50,10 +62,22 @@ hr {
 .navbar-default .navbar-brand:focus{
 	color:#dddddd;
 }
+.regText{
+	color: black;
+}
 @media (min-width: 768px)
 {
 	.navbar-collapse.collapse{
 		display:none!important;
+	}
+	.navbar-collapse.collapse.in{
+		display: block!important;
+	}
+	.navbar-collapse.collapse#collapsable-nav{
+		display: none!important;
+	}
+	
+	
 }
 }
 @media (max-width: 767px)
@@ -73,8 +97,15 @@ hr {
 	.drop-down-list{
 		width: 100%;
 	}
+	.navbar-collapse.collapse#collapsable-nav{
+		display: none!important;
+	}
 }
-@media (max-width: 600px){
+@media(min-width: 992px){
+	
+	
+}
+@media (max-width: 635px){
 	h1 {
 		font-size: 20px;
 	}
@@ -111,7 +142,6 @@ li#aboutBtnLi{
 	float: left;
 }
 #mapBtn, #aboutBtn{
-	margin-left: 5px;
 }
 #motobikeImg
 {
